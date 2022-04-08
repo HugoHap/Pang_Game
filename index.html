@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- GAME OVER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/styles.css" />
+
+    <title>PANG</title>
+</head>
+
+<body>
+
+    <div class="start-game">
+        <img src="./img/logo.png" alt="Logo">
+        <br />
+        <button id="start-button"> Start Game</button>
+        <div>
+            <article>
+                <img src="./img/flechitas.png" alt="imagen flechas">
+                <h1>Press the arrrows to move around</h1>
+            </article>
+            <article>
+                <img src="./img/spacekey.png" alt="imagen space">
+                <h1>Use de space button to shoot</h1>
+            </article>
+        </div>
+
+    </div>
+
+    <div class="canvas-window">
+        <canvas id="canvas" class="hide" width="1300" height="650"></canvas>
+    </div>
+
+    <div class="lost-game hide">
+        <h1>game over</h1>
+        <button id="restart-button">try again</button>
+    </div>
+
+    <div class="win-game hide">
+        <img src="./img/win.png" alt="YOU WIN">
+        <br />
+        <button id="restart-button-win">play again</button>
+    </div>
+
+    <script src="./js/enemies.js"></script>
+    <script src="./js/bullets.js"></script>
+    <script src="./js/platforms&stairs.js"></script>
+    <script src="./js/lives.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+</body>
+
+</html>
